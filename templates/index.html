@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chat Ollama</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chat Ollama</h1>
+
+    <div class="controls">
+      <label>Modelo:</label>
+      <span id="model" class="model-name">cargando...</span>
+    </div>
+
+    <div id="chat" class="chat"></div>
+
+    <form id="form">
+      <input id="input" autocomplete="off" placeholder="Escribe un mensaje..." />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <script src="/static/chat.js"></script>
+</body>
+</html>
